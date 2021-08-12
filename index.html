@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Document</title>
-  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
-</head>
-<body>
-  <div class="container">
-    <h1>Welcome to the Amusement Park!</h1>
-    <h3>How tall are you?</h3>
-    <form id="height-form">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Amusement Park!</h1>
+      <h3>How tall are you?</h3>
+      <form id="height-form">
+        <div class="form-group">
+          <label for="feet-input">Feet: </label>
+          <input type="text" name="feet" id="feet-input" class="form-control" />
+        </div>
 
-      <div class="form-group">
-        
-        <label for="feet">Feet: </label>
-        <input type="text" name="feet" id="feet-input" class="form-control">
+        <div class="form-group">
+          <label for="inches-input">Inches: </label>
+          <input
+            type="text"
+            name="inches"
+            id="inches-input"
+            class="form-control"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">See rides</button>
+      </form>
 
+      <!-- <div id="rides">
+        <ul>
+          <li class="no-tall-people">Ride1</li>
+          <li class="no-tall-people">Ride2</li>
+          <li class="">Ride3</li>
+          <li class="">Ride4</li>
+          <li class="">Ride5</li>
+          <li class="">Ride6</li>
+          <li class="">Ride7</li>
+          <li class="">Ride8</li>
+          <li class="">Ride9</li>
+          <li class="">Ride10</li>
+        </ul>
+      </div> -->
+      <div class="hidden" id="short">
+        <h1>Short ride</h1>
       </div>
-        
-      <div class="form-group">
-
-        <label for="inches">Inches: </label>
-        <input type="text" name="inches" id="inches-input" class="form-control">
-        
+      <div class="hidden" id="tall">
+        <h1>Tall ride</h1>
       </div>
-      
-      <div class="rides">
-        ul
+      <div class="hidden" id="everybody">
+        <h1>All ride</h1>
       </div>
-    </form>
-    
-    
-  </div>
-</body>
+      <div class="hidden" id="medium">
+        <h1>Medium ride</h1>
+      </div>
+    </div>
+  </body>
 </html>
